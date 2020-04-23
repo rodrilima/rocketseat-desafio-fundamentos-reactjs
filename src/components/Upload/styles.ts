@@ -16,7 +16,7 @@ const dragReject = css`
   border-color: #e83f5b;
 `;
 
-export const DropContainer = styled.div.attrs({
+export const DropContainer = styled.form.attrs({
   className: 'dropzone',
 })`
   border: 1.5px dashed #969cb3;
