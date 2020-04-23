@@ -29,8 +29,9 @@ const Import: React.FC = () => {
     });
     try {
       await api.post('/transactions/import', formData);
+      history.go(0)
     } catch (err) {
-      console.log(err.response.error);
+      console.log(err);
     }
   }
 
